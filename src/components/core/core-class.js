@@ -143,6 +143,7 @@ class Swiper extends SwiperClass {
       isVertical() {
         return swiper.params.direction === 'vertical';
       },
+
       // RTL
       rtl: (el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl'),
       rtlTranslate: swiper.params.direction === 'horizontal' && (el.dir.toLowerCase() === 'rtl' || $el.css('direction') === 'rtl'),
@@ -152,7 +153,7 @@ class Swiper extends SwiperClass {
       activeIndex: 0,
       realIndex: 0,
 
-      //
+      // Slide Index Position
       isBeginning: true,
       isEnd: false,
 
